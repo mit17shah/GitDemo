@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Facebook.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="HomePages(failed)">
+    <classes>
+      <class name="Facebook.HomepageTest">
+        <methods>
+          <include name="open"/>
+          <include name="close"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- Facebook.HomepageTest -->
+    </classes>
+  </test> <!-- HomePages(failed) -->
+  <test thread-count="5" name="InfoPages(failed)">
+    <classes>
+      <class name="Facebook.InfopageTest">
+        <methods>
+          <include name="close"/>
+          <include name="Info"/>
+          <include name="open"/>
+        </methods>
+      </class> <!-- Facebook.InfopageTest -->
+    </classes>
+  </test> <!-- InfoPages(failed) -->
+</suite> <!-- Failed suite [Suite] -->
