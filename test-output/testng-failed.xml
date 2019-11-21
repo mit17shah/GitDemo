@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="Facebook.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="HomePages(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="Facebook.HomepageTest">
+      <class name="UPB.Products.Emailpage">
         <methods>
-          <include name="open"/>
-          <include name="close"/>
-          <include name="Login"/>
+          <include name="Email"/>
         </methods>
-      </class> <!-- Facebook.HomepageTest -->
+      </class> <!-- UPB.Products.Emailpage -->
     </classes>
-  </test> <!-- HomePages(failed) -->
-  <test thread-count="5" name="InfoPages(failed)">
-    <classes>
-      <class name="Facebook.InfopageTest">
-        <methods>
-          <include name="close"/>
-          <include name="Info"/>
-          <include name="open"/>
-        </methods>
-      </class> <!-- Facebook.InfopageTest -->
-    </classes>
-  </test> <!-- InfoPages(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
