@@ -50,5 +50,6 @@ public class Landingpage extends Base{
 	{
 		driver.close();
 		driver=null;
+		driver.quit();
 	}
 }
